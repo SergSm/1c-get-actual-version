@@ -8,3 +8,6 @@ The configuration is able to retrieve:
 The simple interace provides search by:
   1) database name
   2) folder name from the launcher's tree-view 
+
+
+ONLY for file-versions
