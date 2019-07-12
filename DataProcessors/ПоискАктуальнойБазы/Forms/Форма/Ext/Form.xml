@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<Page name="СтраницаГлавное" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница главное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаГлавноеРасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПоиск" id="31">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа поиск</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа поиск</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПоискРасширеннаяПодсказка" id="32"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаОтбор" id="44">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отбор</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отбор</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="45"/>
+									<ChildItems>
+										<InputField name="СтрокаПоиска" id="1">
+											<DataPath>СтрокаПоиска</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Width>50</Width>
+											<ClearButton>true</ClearButton>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Поиск баз содержащих в имени этот текст</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="3"/>
+										</InputField>
+										<InputField name="СтрокаПоискаГруппаБаз" id="41">
+											<DataPath>СтрокаПоискаГруппаБаз</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Width>50</Width>
+											<ClearButton>true</ClearButton>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Поиск баз, где имя группы содержит этот текст</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="СтрокаПоискаГруппаБазКонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="СтрокаПоискаГруппаБазРасширеннаяПодсказка" id="43"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="Поиск" id="29">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<Width>10</Width>
+									<Height>3</Height>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<CommandName>Form.Command.Поиск</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Find</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поиск</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПоискРасширеннаяПодсказка" id="30"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="НайденныеБазы" id="4">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>НайденныеБазы</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="НайденныеБазыКонтекстноеМеню" id="5"/>
+							<AutoCommandBar name="НайденныеБазыКоманднаяПанель" id="6">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="СортироватьСписокПоВозрастанию" id="46">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.НайденныеБазы.StandardCommand.SortListAsc</CommandName>
+										<ExtendedTooltip name="СортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="47"/>
+									</Button>
+									<Button name="СортироватьСписокПоУбыванию" id="48">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.НайденныеБазы.StandardCommand.SortListDesc</CommandName>
+										<ExtendedTooltip name="СортироватьСписокПоУбываниюРасширеннаяПодсказка" id="49"/>
+									</Button>
+									<Button name="НайденныеБазыПолучитьВерсиюКонфигурации" id="55">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПолучитьВерсиюКонфигурации</CommandName>
+										<BackColor>#ECE0FF</BackColor>
+										<BorderColor>#FF0000</BorderColor>
+										<ExtendedTooltip name="НайденныеБазыПолучитьВерсиюКонфигурацииРасширеннаяПодсказка" id="56"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="НайденныеБазыРасширеннаяПодсказка" id="7"/>
+							<SearchStringAddition name="НайденныеБазыСтрокаПоиска" id="8">
+								<AdditionSource>
+									<Item>НайденныеБазы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НайденныеБазыСтрокаПоискаКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="НайденныеБазыСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НайденныеБазыСостояниеПросмотра" id="11">
+								<AdditionSource>
+									<Item>НайденныеБазы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НайденныеБазыСостояниеПросмотраКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="НайденныеБазыСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НайденныеБазыУправлениеПоиском" id="14">
+								<AdditionSource>
+									<Item>НайденныеБазы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НайденныеБазыУправлениеПоискомКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="НайденныеБазыУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">НайденныеБазыПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="НайденныеБазыНомерСтроки" id="26">
+									<DataPath>НайденныеБазы.НомерСтроки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>2</Width>
+									<ContextMenu name="НайденныеБазыНомерСтрокиКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="НайденныеБазыНомерСтрокиРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="НайденныеБазыИмя" id="17">
+									<DataPath>НайденныеБазы.ИмяБазы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НайденныеБазыИмяКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="НайденныеБазыИмяРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="НайденныеБазыГруппаБазы" id="38">
+									<DataPath>НайденныеБазы.ГруппаБазы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НайденныеБазыГруппаБазыКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="НайденныеБазыГруппаБазыРасширеннаяПодсказка" id="40"/>
+								</InputField>
+								<InputField name="НайденныеБазыПуть" id="20">
+									<DataPath>НайденныеБазы.ПутьКБазе</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НайденныеБазыПутьКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="НайденныеБазыПутьРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<InputField name="НайденныеБазыВерсияПлатформы" id="60">
+									<DataPath>НайденныеБазы.ВерсияПлатформы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НайденныеБазыВерсияПлатформыКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="НайденныеБазыВерсияПлатформыРасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<InputField name="НайденныеБазыДатаИзмененияФайлаБазы" id="23">
+									<DataPath>НайденныеБазы.ДатаИзмененияФайлаБазы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НайденныеБазыДатаИзмененияФайлаБазыКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="НайденныеБазыДатаИзмененияФайлаБазыРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<CheckBoxField name="НайденныеБазыСуществуетФайлБД" id="35">
+									<DataPath>НайденныеБазы.СуществуетФайлБД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НайденныеБазыСуществуетФайлБДКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="НайденныеБазыСуществуетФайлБДРасширеннаяПодсказка" id="37"/>
+								</CheckBoxField>
+								<InputField name="НайденныеБазыВерсияКонфигурации" id="57">
+									<DataPath>НайденныеБазы.ВерсияКонфигурации</DataPath>
+									<TitleBackColor>#E9E2FF</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<BackColor>#FF99CC</BackColor>
+									<BorderColor>#FF0000</BorderColor>
+									<ContextMenu name="НайденныеБазыВерсияКонфигурацииКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="НайденныеБазыВерсияКонфигурацииРасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="НайденныеБазыПользователь" id="71">
+									<DataPath>НайденныеБазы.Пользователь</DataPath>
+									<TitleBackColor>#CDFFC5</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НайденныеБазыПользовательКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="НайденныеБазыПользовательРасширеннаяПодсказка" id="73"/>
+								</InputField>
+								<InputField name="НайденныеБазыПароль" id="74">
+									<DataPath>НайденныеБазы.Пароль</DataPath>
+									<TitleBackColor>#CDFFC5</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НайденныеБазыПарольКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="НайденныеБазыПарольРасширеннаяПодсказка" id="76"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="ГруппаДопСвойства" id="50">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа доп свойства</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа доп свойства</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДопСвойстваРасширеннаяПодсказка" id="51"/>
+							<ChildItems>
+								<CheckBoxField name="ПолучатьДатуПоследнегоИзменения" id="52">
+									<DataPath>ПолучатьДатуПоследнегоИзменения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Получать дату последнего изменения и факт существования БД</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПолучатьДатуПоследнегоИзмененияКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ПолучатьДатуПоследнегоИзмененияРасширеннаяПодсказка" id="54"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаЛогины" id="81">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные авторизации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница логины</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаЛогиныРасширеннаяПодсказка" id="82"/>
+					<ChildItems>
+						<Table name="ДанныеАвторизации" id="83">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДанныеАвторизации</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДанныеАвторизацииКонтекстноеМеню" id="84"/>
+							<AutoCommandBar name="ДанныеАвторизацииКоманднаяПанель" id="85"/>
+							<ExtendedTooltip name="ДанныеАвторизацииРасширеннаяПодсказка" id="86"/>
+							<SearchStringAddition name="ДанныеАвторизацииСтрокаПоиска" id="87">
+								<AdditionSource>
+									<Item>ДанныеАвторизации</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеАвторизацииСтрокаПоискаКонтекстноеМеню" id="88"/>
+								<ExtendedTooltip name="ДанныеАвторизацииСтрокаПоискаРасширеннаяПодсказка" id="89"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДанныеАвторизацииСостояниеПросмотра" id="90">
+								<AdditionSource>
+									<Item>ДанныеАвторизации</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеАвторизацииСостояниеПросмотраКонтекстноеМеню" id="91"/>
+								<ExtendedTooltip name="ДанныеАвторизацииСостояниеПросмотраРасширеннаяПодсказка" id="92"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДанныеАвторизацииУправлениеПоиском" id="93">
+								<AdditionSource>
+									<Item>ДанныеАвторизации</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеАвторизацииУправлениеПоискомКонтекстноеМеню" id="94"/>
+								<ExtendedTooltip name="ДанныеАвторизацииУправлениеПоискомРасширеннаяПодсказка" id="95"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ДанныеАвторизацииПользователь" id="96">
+									<DataPath>ДанныеАвторизации.Пользователь</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеАвторизацииПользовательКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ДанныеАвторизацииПользовательРасширеннаяПодсказка" id="98"/>
+								</InputField>
+								<InputField name="ДанныеАвторизацииПароль" id="99">
+									<DataPath>ДанныеАвторизации.Пароль</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеАвторизацииПарольКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ДанныеАвторизацииПарольРасширеннаяПодсказка" id="101"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПоискАктуальнойБазы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СтрокаПоиска" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка поиска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>СтрокаПоиска</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="НайденныеБазы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найденные базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяБазы" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя базы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПутьКБазе" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к базе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаИзмененияФайлаБазы" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата изменения файла базы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерСтроки" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуществуетФайлБД" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Существует файл БД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ГруппаБазы" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа базы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВерсияКонфигурации" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия конфигурации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВерсияПлатформы" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия платформы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пользователь" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пароль" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пароль</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СтрокаПоискаГруппаБаз" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка поиска группа баз</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>СтрокаПоискаГруппаБаз</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПолучатьДатуПоследнегоИзменения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получать дату последнего изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПолучатьДатуПоследнегоИзменения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СтандартныйЛогин" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стандартный логин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>СтандартныйЛогин</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СтандартныйПароль" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стандартный пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>СтандартныйПароль</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ДанныеАвторизации" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Save>
+				<Field>ДанныеАвторизации</Field>
+			</Save>
+			<Columns>
+				<Column name="Пользователь" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пароль" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пароль</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Поиск" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Поиск</Action>
+		</Command>
+		<Command name="ПолучитьВерсиюКонфигурации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить версию конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить версию конфигурации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьВерсиюКонфигурации</Action>
+		</Command>
+	</Commands>
+</Form>
