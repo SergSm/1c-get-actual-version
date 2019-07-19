@@ -1,4 +1,4 @@
-# 1c-get-actual-version
+﻿# 1c-get-actual-version
 A simple 1C:Enterprise configuration for parsing the "ibases.v8i" file (it contains the list of entries to "1C" databases) 
 and extracting the information from 1Cv8.1CD files 
 
@@ -31,3 +31,5 @@ ________________________________________________________________________________
 У меня есть группа с именем "Супер клиент"
 и 5 точек входа в базы внутри группы
 Вводя данные в строку поиска я могу получить все описанные свойства файлов 1Cv8.1CD
+
+Работает ТОЛЬКО для файловых версий
