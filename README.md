@@ -1,6 +1,6 @@
 ﻿# 1c-get-actual-version
 
-![](https://github.com/SergSm/1c-get-actual-version/blob/master/screen.png)
+![](https://github.com/SergSm/1c-get-actual-version/blob/master/screen1.png)
 
 A simple 1C:Enterprise configuration for parsing the "ibases.v8i" file (it contains the list of entries to "1C" databases) 
 and extracting the information from 1Cv8.1CD files 
