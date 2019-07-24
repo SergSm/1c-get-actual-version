@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.5">
 	<ConfigVersions>
-		<Metadata name="Configuration.ПоискАктуальнойБазы" id="00dbc8a2-16f0-41ad-a6c5-574514d22713" configVersion="61989d3a19e67148bcfc4fa7ac1db83800000000"/>
+		<Metadata name="Configuration.ПоискАктуальнойБазы" id="00dbc8a2-16f0-41ad-a6c5-574514d22713" configVersion="8ed8d13cb25d074a9d36e81eaf7e522700000000"/>
 		<Metadata name="Configuration.ПоискАктуальнойБазы.HomePageWorkArea" id="8522ec0b-125e-4ee4-9d9c-cfa5312887b2.8" configVersion="502cefe828b3a545a3e1b86b0743bd2600000000"/>
 		<Metadata name="DataProcessor.ПоискАктуальнойБазы" id="46eca0f9-aa73-4633-a68b-9a43088a0f77" configVersion="01266ead1651e84db927fb60cb7da9e600000000"/>
-		<Metadata name="DataProcessor.ПоискАктуальнойБазы.Form.Форма" id="d818aa3d-c83a-4ecd-af43-443da37d7143" configVersion="7a36ca748569fe40bf152002b3bcd31d00000000"/>
-		<Metadata name="DataProcessor.ПоискАктуальнойБазы.Form.Форма.Form" id="d818aa3d-c83a-4ecd-af43-443da37d7143.0" configVersion="843814ae896ad540befd158c021c0ba600000000"/>
+		<Metadata name="DataProcessor.ПоискАктуальнойБазы.Form.Форма" id="d818aa3d-c83a-4ecd-af43-443da37d7143" configVersion="a1cb9360104a5a49838fb9fe927eeaab00000000"/>
+		<Metadata name="DataProcessor.ПоискАктуальнойБазы.Form.Форма.Form" id="d818aa3d-c83a-4ecd-af43-443da37d7143.0" configVersion="d6309cbb567a6243a46679f12ff77c4d00000000"/>
 		<Metadata name="Language.Русский" id="1af47485-d934-436d-8179-e3938aa0f92a" configVersion="2c25b3695457fe4ab106203851c8ad0b00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

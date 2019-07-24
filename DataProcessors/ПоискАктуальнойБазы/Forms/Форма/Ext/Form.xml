@@ -150,9 +150,15 @@
 									</Button>
 									<Button name="НайденныеБазыПолучитьВерсиюКонфигурации" id="55">
 										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.ПолучитьВерсиюКонфигурации</CommandName>
+										<CommandName>Form.Command.ПолучитьПараметрыКонфигураций</CommandName>
 										<BackColor>#ECE0FF</BackColor>
 										<BorderColor>#FF0000</BorderColor>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Получить параметры конфигураций</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="НайденныеБазыПолучитьВерсиюКонфигурацииРасширеннаяПодсказка" id="56"/>
 									</Button>
 								</ChildItems>
@@ -238,6 +244,13 @@
 									<BorderColor>#FF0000</BorderColor>
 									<ContextMenu name="НайденныеБазыВерсияКонфигурацииКонтекстноеМеню" id="58"/>
 									<ExtendedTooltip name="НайденныеБазыВерсияКонфигурацииРасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="НайденныеБазыКомментарийКонфигурации" id="102">
+									<DataPath>НайденныеБазы.КомментарийКонфигурации</DataPath>
+									<TitleBackColor>#E9E2FF</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НайденныеБазыКомментарийКонфигурацииКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="НайденныеБазыКомментарийКонфигурацииРасширеннаяПодсказка" id="104"/>
 								</InputField>
 								<InputField name="НайденныеБазыПользователь" id="71">
 									<DataPath>НайденныеБазы.Пользователь</DataPath>
@@ -539,6 +552,21 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="КомментарийКонфигурации" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий конфигурации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="СтрокаПоискаГруппаБаз" id="4">
@@ -672,20 +700,20 @@
 			</ToolTip>
 			<Action>Поиск</Action>
 		</Command>
-		<Command name="ПолучитьВерсиюКонфигурации" id="2">
+		<Command name="ПолучитьПараметрыКонфигураций" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Получить версию конфигурации</v8:content>
+					<v8:content>Получить параметры конфигураций</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Получить версию конфигурации</v8:content>
+					<v8:content>Получить параметры конфигураций</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ПолучитьВерсиюКонфигурации</Action>
+			<Action>ПолучитьПараметрыКонфигураций</Action>
 		</Command>
 	</Commands>
 </Form>
