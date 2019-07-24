@@ -8,6 +8,7 @@ and extracting the information from 1Cv8.1CD files
 The configuration is able to retrieve properties: 
   1) 1Cv8.1CD change date
   2) The version of the database configuration (via COM-connection) 
+  3) Configuration comment
   
 The simple interace provides search by:
   1) database name
@@ -26,6 +27,7 @@ ________________________________________________________________________________
 Конфигурация может получать свойства:
   1) Дату изменения файла 1Cv8.1CD
   2) Версию конфигурации базы данных (с помощью COM-соединения)
+  3) Комментарий конфигурации
   
  Простой интерфейс дает возможность осуществлять поиск
   1) По имени базы данных
