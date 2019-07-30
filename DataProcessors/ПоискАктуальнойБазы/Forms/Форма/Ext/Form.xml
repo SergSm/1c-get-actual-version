@@ -121,6 +121,40 @@
 									</Title>
 									<ExtendedTooltip name="ПоискРасширеннаяПодсказка" id="30"/>
 								</Button>
+								<UsualGroup name="ГруппаДопСвойства" id="50">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доп свойства</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доп свойства</v8:content>
+										</v8:item>
+									</ToolTip>
+									<GroupVerticalAlign>Top</GroupVerticalAlign>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДопСвойстваРасширеннаяПодсказка" id="51"/>
+									<ChildItems>
+										<CheckBoxField name="ПолучатьДатуПоследнегоИзменения" id="52">
+											<DataPath>ПолучатьДатуПоследнегоИзменения</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Получать дату изменения и факт существования БД при поиске</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<GroupVerticalAlign>Top</GroupVerticalAlign>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПолучатьДатуПоследнегоИзмененияКонтекстноеМеню" id="53"/>
+											<ExtendedTooltip name="ПолучатьДатуПоследнегоИзмененияРасширеннаяПодсказка" id="54"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 						<Table name="НайденныеБазы" id="4">
@@ -160,6 +194,17 @@
 											</v8:item>
 										</Title>
 										<ExtendedTooltip name="НайденныеБазыПолучитьВерсиюКонфигурацииРасширеннаяПодсказка" id="56"/>
+									</Button>
+									<Button name="НайденныеБазыОтметитьБазуКакПригоднуюДляОбновления" id="105">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОтметитьБазуКакПригоднуюДляОбновления</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Отметить базу как актуальную</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="НайденныеБазыОтметитьБазуКакПригоднуюДляОбновленияРасширеннаяПодсказка" id="106"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
@@ -205,24 +250,43 @@
 									<ContextMenu name="НайденныеБазыИмяКонтекстноеМеню" id="18"/>
 									<ExtendedTooltip name="НайденныеБазыИмяРасширеннаяПодсказка" id="19"/>
 								</InputField>
-								<InputField name="НайденныеБазыГруппаБазы" id="38">
-									<DataPath>НайденныеБазы.ГруппаБазы</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="НайденныеБазыГруппаБазыКонтекстноеМеню" id="39"/>
-									<ExtendedTooltip name="НайденныеБазыГруппаБазыРасширеннаяПодсказка" id="40"/>
-								</InputField>
-								<InputField name="НайденныеБазыПуть" id="20">
-									<DataPath>НайденныеБазы.ПутьКБазе</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="НайденныеБазыПутьКонтекстноеМеню" id="21"/>
-									<ExtendedTooltip name="НайденныеБазыПутьРасширеннаяПодсказка" id="22"/>
-								</InputField>
-								<InputField name="НайденныеБазыВерсияПлатформы" id="60">
-									<DataPath>НайденныеБазы.ВерсияПлатформы</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="НайденныеБазыВерсияПлатформыКонтекстноеМеню" id="61"/>
-									<ExtendedTooltip name="НайденныеБазыВерсияПлатформыРасширеннаяПодсказка" id="62"/>
-								</InputField>
+								<ColumnGroup name="НайденныеБазыГруппа1" id="107">
+									<ExtendedTooltip name="НайденныеБазыГруппа1РасширеннаяПодсказка" id="108"/>
+									<ChildItems>
+										<InputField name="НайденныеБазыГруппаБазы" id="38">
+											<DataPath>НайденныеБазы.ГруппаБазы</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НайденныеБазыГруппаБазыКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="НайденныеБазыГруппаБазыРасширеннаяПодсказка" id="40"/>
+										</InputField>
+										<InputField name="НайденныеБазыПуть" id="20">
+											<DataPath>НайденныеБазы.ПутьКБазе</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НайденныеБазыПутьКонтекстноеМеню" id="21"/>
+											<ExtendedTooltip name="НайденныеБазыПутьРасширеннаяПодсказка" id="22"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="НайденныеБазыГруппа2" id="109">
+									<ExtendedTooltip name="НайденныеБазыГруппа2РасширеннаяПодсказка" id="110"/>
+									<ChildItems>
+										<InputField name="НайденныеБазыВерсияПлатформы" id="60">
+											<DataPath>НайденныеБазы.ВерсияПлатформы</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НайденныеБазыВерсияПлатформыКонтекстноеМеню" id="61"/>
+											<ExtendedTooltip name="НайденныеБазыВерсияПлатформыРасширеннаяПодсказка" id="62"/>
+										</InputField>
+										<InputField name="НайденныеБазыВерсияКонфигурации" id="57">
+											<DataPath>НайденныеБазы.ВерсияКонфигурации</DataPath>
+											<TitleBackColor>#E9E2FF</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<BackColor>#FF99CC</BackColor>
+											<BorderColor>#FF0000</BorderColor>
+											<ContextMenu name="НайденныеБазыВерсияКонфигурацииКонтекстноеМеню" id="58"/>
+											<ExtendedTooltip name="НайденныеБазыВерсияКонфигурацииРасширеннаяПодсказка" id="59"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
 								<InputField name="НайденныеБазыДатаИзмененияФайлаБазы" id="23">
 									<DataPath>НайденныеБазы.ДатаИзмененияФайлаБазы</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -236,15 +300,45 @@
 									<ContextMenu name="НайденныеБазыСуществуетФайлБДКонтекстноеМеню" id="36"/>
 									<ExtendedTooltip name="НайденныеБазыСуществуетФайлБДРасширеннаяПодсказка" id="37"/>
 								</CheckBoxField>
-								<InputField name="НайденныеБазыВерсияКонфигурации" id="57">
-									<DataPath>НайденныеБазы.ВерсияКонфигурации</DataPath>
-									<TitleBackColor>#E9E2FF</TitleBackColor>
+								<CheckBoxField name="НайденныеБазыАктуальнаяБазаДляОбновления" id="113">
+									<DataPath>НайденныеБазы.АктуальнаяБазаДляОбновления</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Актуальная</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В корне базы создан файл CORRECT</v8:content>
+										</v8:item>
+									</ToolTip>
 									<EditMode>EnterOnInput</EditMode>
-									<BackColor>#FF99CC</BackColor>
-									<BorderColor>#FF0000</BorderColor>
-									<ContextMenu name="НайденныеБазыВерсияКонфигурацииКонтекстноеМеню" id="58"/>
-									<ExtendedTooltip name="НайденныеБазыВерсияКонфигурацииРасширеннаяПодсказка" id="59"/>
-								</InputField>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НайденныеБазыАктуальнаяБазаДляОбновленияКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="НайденныеБазыАктуальнаяБазаДляОбновленияРасширеннаяПодсказка" id="115"/>
+								</CheckBoxField>
+								<ColumnGroup name="НайденныеБазыГруппа3" id="111">
+									<ExtendedTooltip name="НайденныеБазыГруппа3РасширеннаяПодсказка" id="112"/>
+									<ChildItems>
+										<InputField name="НайденныеБазыПользователь" id="71">
+											<DataPath>НайденныеБазы.Пользователь</DataPath>
+											<TitleBackColor>#CDFFC5</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НайденныеБазыПользовательКонтекстноеМеню" id="72"/>
+											<ExtendedTooltip name="НайденныеБазыПользовательРасширеннаяПодсказка" id="73"/>
+										</InputField>
+										<InputField name="НайденныеБазыПароль" id="74">
+											<DataPath>НайденныеБазы.Пароль</DataPath>
+											<TitleBackColor>#CDFFC5</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НайденныеБазыПарольКонтекстноеМеню" id="75"/>
+											<ExtendedTooltip name="НайденныеБазыПарольРасширеннаяПодсказка" id="76"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
 								<InputField name="НайденныеБазыКомментарийКонфигурации" id="102">
 									<DataPath>НайденныеБазы.КомментарийКонфигурации</DataPath>
 									<TitleBackColor>#E9E2FF</TitleBackColor>
@@ -252,53 +346,8 @@
 									<ContextMenu name="НайденныеБазыКомментарийКонфигурацииКонтекстноеМеню" id="103"/>
 									<ExtendedTooltip name="НайденныеБазыКомментарийКонфигурацииРасширеннаяПодсказка" id="104"/>
 								</InputField>
-								<InputField name="НайденныеБазыПользователь" id="71">
-									<DataPath>НайденныеБазы.Пользователь</DataPath>
-									<TitleBackColor>#CDFFC5</TitleBackColor>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="НайденныеБазыПользовательКонтекстноеМеню" id="72"/>
-									<ExtendedTooltip name="НайденныеБазыПользовательРасширеннаяПодсказка" id="73"/>
-								</InputField>
-								<InputField name="НайденныеБазыПароль" id="74">
-									<DataPath>НайденныеБазы.Пароль</DataPath>
-									<TitleBackColor>#CDFFC5</TitleBackColor>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="НайденныеБазыПарольКонтекстноеМеню" id="75"/>
-									<ExtendedTooltip name="НайденныеБазыПарольРасширеннаяПодсказка" id="76"/>
-								</InputField>
 							</ChildItems>
 						</Table>
-						<UsualGroup name="ГруппаДопСвойства" id="50">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа доп свойства</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа доп свойства</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаДопСвойстваРасширеннаяПодсказка" id="51"/>
-							<ChildItems>
-								<CheckBoxField name="ПолучатьДатуПоследнегоИзменения" id="52">
-									<DataPath>ПолучатьДатуПоследнегоИзменения</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Получать дату последнего изменения и факт существования БД</v8:content>
-										</v8:item>
-									</Title>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ПолучатьДатуПоследнегоИзмененияКонтекстноеМеню" id="53"/>
-									<ExtendedTooltip name="ПолучатьДатуПоследнегоИзмененияРасширеннаяПодсказка" id="54"/>
-								</CheckBoxField>
-							</ChildItems>
-						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="СтраницаЛогины" id="81">
@@ -314,6 +363,7 @@
 							<v8:content>Страница логины</v8:content>
 						</v8:item>
 					</ToolTip>
+					<BackColor>#CDFFC5</BackColor>
 					<ExtendedTooltip name="СтраницаЛогиныРасширеннаяПодсказка" id="82"/>
 					<ChildItems>
 						<Table name="ДанныеАвторизации" id="83">
@@ -567,6 +617,17 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="АктуальнаяБазаДляОбновления" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Актуальная база для обновления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="СтрокаПоискаГруппаБаз" id="4">
@@ -714,6 +775,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПолучитьПараметрыКонфигураций</Action>
+		</Command>
+		<Command name="ОтметитьБазуКакПригоднуюДляОбновления" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметить базу как пригодную для обновления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметить базу как пригодную для обновления. в корне базы создаётя текстовый документ CORRECT</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтметитьБазуКакПригоднуюДляОбновления</Action>
 		</Command>
 	</Commands>
 </Form>
